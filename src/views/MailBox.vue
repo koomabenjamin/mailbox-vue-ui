@@ -19,7 +19,7 @@
                   class="h-5 w-5" 
                   :is="OutlineIcons[item.icon]">
                 </component>
-                <span>{{ item.name }}</span>
+                <span class="text-sm font-light">{{ item.name }}</span>
                 <div
                   :class="{ 'hidden' : item.unReadCount === 0}" 
                   class="text-white bg-red-600 rounded px-1 py-0.5">
