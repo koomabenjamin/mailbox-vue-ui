@@ -48,25 +48,30 @@
 
     <div>
 
-      <div class="h-auto p-6">
-        <p class="text-[22px]">Web design requirement for travel website</p>
-        <p class="text-[18px]">Hello Asal Design</p>
-        <p class="text-[18px]">I contacted you to see if you are interested and willing to help me with my website<br/>
+      <div class="p-6">
+      <div class="h-auto border-b border-gray-200">
+        <p class="text-[22px] mb-4">Web design requirement for travel website</p>
+        
+        <p class="text-[18px] mb-4">Hello Asal Design</p>
+        <p class="text-[18px] mb-4">I contacted you to see if you are interested and willing to help me with my website<br/>
         design. Work is still on-going and it's starting on Figma. If you're interested, let me <br/>
         know if we can chat for a bit and how much you usually charge.
         </p>
+        <p class="text-[18px] mb-4">Hope to hear from you soon.</p>
+        <p class="text-[18px] mb-6">Regards,<br/>Wahyu Siburan </p>
       </div>
-
-      <div class="px-6">
-      <div class="h-28 border-t-black-200">border3</div>
     </div>
 
       <div class="px-6">
-      <div class="h-25 border-t-green-200" >boder2</div>
+      <div class="h-28 border-b border-gray-200"></div>
     </div>
 
       <div class="px-6">
-      <div class="h-22 border-t-blue-200">border</div>
+      <div class="h-25 border-b border-gray-200" ></div>
+    </div>
+
+      <div class="px-6">
+      <div class="h-22">border</div>
     </div>
     </div>
 
