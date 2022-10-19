@@ -19,8 +19,8 @@
           <span>New Message</span>
         </div>
 
+        <!-- Menu -->
         <div class="h-auto w-full p-0">
-          <!-- <div class="h-10 w-full bg-white rounded"></div> -->
           <div class="h-12 w-full rounded-lg text-sm flex items-center justify-between text-slate-500 p-2 cursor-pointer" 
             v-for="item in mainMenuItems"
             :class="{ 'bg-white border shadow-sm': activeTab === item.tab }"
@@ -42,6 +42,12 @@
               <div class="text-[11px]">{{ item.readCount }}</div>
           </div>
         </div>
+        
+        <!-- Labels -->
+        <div class="h-auto w-full p-0">
+
+        </div>
+
       </div>
       
       <div class="w-1/3 bg-gray-50 border-r p-4">
@@ -80,13 +86,13 @@ const activeTab = ref('inbox')
 const changeTab = (tab) => activeTab.value = tab
 
 const mainMenuItems = [
-  { tab:'inbox', icon:'InboxIcon', name:'Inbox', unReadCount:109, readCount: 0 },
-  { tab:'sentMail', icon:'InboxStackIcon', name:'Sent Mail', unReadCount:0, readCount: 0 },
-  { tab:'allMail', icon:'InboxStackIcon', name:'All Mail', unReadCount:0, readCount: 0 },
-  { tab:'drafts', icon:'PencilIcon', name:'Drafts', unReadCount:0, readCount: 0 },
-  { tab:'favourites', icon:'StarIcon', name:'Favourites', unReadCount:0, readCount: 0 },
-  { tab:'spam', icon:'FolderMinusIcon', name:'Spam', unReadCount:0, readCount: 0 },
-  { tab:'trash', icon:'TrashIcon', name:'Trash', unReadCount:0, readCount: 0 },
+  { tab:'inbox', icon:'InboxIcon', name:'Inbox', unReadCount:109, readCount: 22 },
+  { tab:'sentMail', icon:'InboxStackIcon', name:'Sent Mail', unReadCount:0, readCount: 10 },
+  { tab:'allMail', icon:'InboxStackIcon', name:'All Mail', unReadCount:0, readCount: 32 },
+  { tab:'drafts', icon:'PencilIcon', name:'Drafts', unReadCount:0, readCount: 2 },
+  { tab:'favourites', icon:'StarIcon', name:'Favourites', unReadCount:0, readCount: 5 },
+  { tab:'spam', icon:'FolderMinusIcon', name:'Spam', unReadCount:3, readCount: 156 },
+  { tab:'trash', icon:'TrashIcon', name:'Trash', unReadCount:0, readCount: 13 },
 ];
 
 </script>
