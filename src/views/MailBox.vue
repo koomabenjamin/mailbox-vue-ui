@@ -31,7 +31,22 @@
         </div>
       </div>
       
-      <div class="w-1/3 bg-gray-50 border-r"></div>
+      <div class="w-1/3 bg-gray-50 border-r p-4">
+        <div class="w-full h-40 item-center text-slate-500">
+          <div class="flex-col">
+            <h6 class="text-[20px] font-bold">Inbox</h6>
+            <div class="text-sm text-slate-400 justify-between items-center"> 
+              <small>382 message</small>&nbsp;&nbsp;<small>120 Unread</small>
+            </div>
+          </div>
+          <div class="flex"> 
+            <div class="w-72"> 
+              <input type="text" class="w-full bg-gray-100 border-none rounded-md text-sm h-10 p-2" placeholder="Search"/>
+            </div>
+              <!-- <button class="ml-4">plus</button> -->
+          </div>
+        </div>
+      </div>
       
       <div class="w-1/2"></div>
 
