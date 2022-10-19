@@ -2,7 +2,7 @@
   <div class="text-3xl w-screen h-screen p-4 bg-slate-200">
     <div class="w-full h-full bg-white border rounded-lg flex">
       
-      <div class="w-1/5 bg-gray-100 border-r p-4 space-y-4">
+      <div class="w-1/5 bg-gray-100 border-r p-4 space-y-4 h-full overflow-auto">
 
         <div class="w-full h-16 bg-slate-200 border rounded flex items-center p-2 space-x-2">
           <div class="h-12 w-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex-shrink-0"></div>
