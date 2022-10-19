@@ -5,7 +5,13 @@
       <div class="w-1/6 bg-gray-100 border-r p-4 space-y-4">
 
         <div class="w-full h-16 bg-slate-200 border rounded"></div>
-        <div class="w-full h-12 bg-blue-700 border rounded"></div>
+        <div class="w-full h-12 bg-blue-700 border rounded-lg text-white flex items-center text-sm pl-2 space-x-2">
+          <component 
+            class="h-6 w-6 stroke-2" 
+            :is="OutlineIcons['PlusIcon']">
+          </component>
+          <span>New Message</span>
+        </div>
 
         <div class="h-auto w-full p-0">
           <!-- <div class="h-10 w-full bg-white rounded"></div> -->
