@@ -11,7 +11,7 @@
             <span class="text-[10px] text-gray-500">abednego.example@gmail.com</span>
           </div>
         </div>
-        <div class="w-full h-12 bg-blue-700 border rounded-lg text-white flex items-center text-sm pl-2 space-x-2">
+        <div class="w-full h-12 bg-blue-700 border rounded-xl text-white flex items-center text-sm pl-2 space-x-2 shadow-sm">
           <component 
             class="h-6 w-6 stroke-2" 
             :is="OutlineIcons['PlusIcon']">
