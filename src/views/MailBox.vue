@@ -43,7 +43,10 @@
             <div class="w-72"> 
               <input type="text" class="w-full bg-gray-100 border-none rounded-md text-sm h-10 p-2" placeholder="Search"/>
             </div>
-              <!-- <button class="ml-4">plus</button>  PlusIcon.d-->
+
+              <!-- This is not how one references items / elements within an array -->
+              <!-- <button class="ml-4"><OutlineIcons.PlusIcon  class="bg-gray-500"/></button> -->
+
               <button class="ml-4"><OutlineIcons.PlusIcon  class="bg-gray-500"/></button>
           </div>
         </div>
