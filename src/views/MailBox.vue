@@ -9,17 +9,18 @@
 
         <div class="h-auto w-full p-0">
           <!-- <div class="h-10 w-full bg-white rounded"></div> -->
-          <div class="h-10 w-full rounded text-sm flex items-center justify-between text-slate-500 p-2" 
-            v-for="item in mainMenuItems" 
-            :class="{ 'bg-white': item.name === 'Inbox' }"
+          <div class="h-10 w-full rounded text-sm flex items-center justify-between text-slate-500 p-2 my-0.5" 
+            v-for="item in mainMenuItems"
+            :class="{ 'bg-white': activeTab === item.tab }"
+            @click="changeTab(item.tab)"
             :key="item">
               <div 
                 class="flex space-x-2 items-center">
                 <component 
-                  class="h-5 w-5" 
+                  class="h-6 w-6" 
                   :is="OutlineIcons[item.icon]">
                 </component>
-                <span class="text-xs font-normal">{{ item.name }}</span>
+                <span class="text-xs font-semibold">{{ item.name }}</span>
                 <div
                   :class="{ 'hidden' : item.unReadCount === 0}" 
                   class="text-white bg-red-600 rounded px-1">
@@ -59,16 +60,21 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import * as OutlineIcons from '@heroicons/vue/24/outline';
 
+const activeTab = ref('inbox')
+
+const changeTab = (tab) => activeTab.value = tab
+
 const mainMenuItems = [
-  { icon:'InboxIcon', name:'Inbox', unReadCount:109, readCount: 0 },
-  { icon:'InboxStackIcon', name:'Sent Mail', unReadCount:0, readCount: 0 },
-  { icon:'InboxStackIcon', name:'All Mail', unReadCount:0, readCount: 0 },
-  { icon:'PencilIcon', name:'Drafts', unReadCount:0, readCount: 0 },
-  { icon:'StarIcon', name:'Favourites', unReadCount:0, readCount: 0 },
-  { icon:'FolderMinusIcon', name:'Spam', unReadCount:0, readCount: 0 },
-  { icon:'TrashIcon', name:'Trash', unReadCount:0, readCount: 0 },
+  { tab:'inbox', icon:'InboxIcon', name:'Inbox', unReadCount:109, readCount: 0 },
+  { tab:'sentMail', icon:'InboxStackIcon', name:'Sent Mail', unReadCount:0, readCount: 0 },
+  { tab:'allMail', icon:'InboxStackIcon', name:'All Mail', unReadCount:0, readCount: 0 },
+  { tab:'drafts', icon:'PencilIcon', name:'Drafts', unReadCount:0, readCount: 0 },
+  { tab:'favourites', icon:'StarIcon', name:'Favourites', unReadCount:0, readCount: 0 },
+  { tab:'spam', icon:'FolderMinusIcon', name:'Spam', unReadCount:0, readCount: 0 },
+  { tab:'trash', icon:'TrashIcon', name:'Trash', unReadCount:0, readCount: 0 },
 ];
 
 </script>
