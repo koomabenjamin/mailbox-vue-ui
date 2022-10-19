@@ -67,7 +67,7 @@
     </div>
 
       <div class="px-6">
-      <div class="h-25 border-b border-gray-200" ></div>
+      <div class="h-25 border-b border-gray-200 overflow-auto" ></div>
     </div>
 
       <div class="px-6">
