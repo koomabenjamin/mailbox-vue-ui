@@ -44,8 +44,34 @@
         </div>
         
         <!-- Labels -->
+        <p class="mt-5 text-sm text-slate-400 pl-2 uppercase font-semibold">Labels</p>
         <div class="h-auto w-full p-0">
-
+          <div class="h-12 w-full rounded-lg text-sm flex items-center justify-between text-slate-500 p-2 cursor-pointer" 
+            v-for="item in labelItems"
+            :class="{ 'bg-white border shadow-sm': activeTab === item.tab }"
+            @click="changeTab(item.tab)"
+            :key="item">
+              <div 
+                class="flex space-x-2 items-center">
+                <div
+                :class="item.colour"
+                class="h-5 w-5 border-2 rounded-full"></div>
+                <span class="text-xs font-normal">{{ item.name }}</span>
+                <!-- <div
+                  :class="{ 'hidden' : item.unReadCount === 0}" 
+                  class="text-white bg-red-600 rounded px-1">
+                  <span v-if="item.unReadCount > 0" class="text-[10px]">{{ item.unReadCount }}</span>
+                </div> -->
+              </div>
+              <div class="text-[11px]">{{ item.readCount }}</div>
+          </div>
+        </div>
+        <div class="mt-5 text-xs text-slate-400 hover:text-blue-600 pl-2 font-normal space-x-2 flex w-full justify-end cursor-pointer">
+          <component 
+            class="h-4 w-4 stroke-2" 
+            :is="OutlineIcons['PlusIcon']">
+          </component>
+          <span>Add Labels</span>
         </div>
 
       </div>
@@ -94,6 +120,13 @@ const mainMenuItems = [
   { tab:'spam', icon:'FolderMinusIcon', name:'Spam', unReadCount:3, readCount: 156 },
   { tab:'trash', icon:'TrashIcon', name:'Trash', unReadCount:0, readCount: 13 },
 ];
+
+const labelItems = [
+  { colour:'border-blue-500', tab:'personal', icon:'InboxIcon', name:'Personal', unReadCount:109, readCount: 22 },
+  { colour:'border-red-500', tab:'school', icon:'InboxStackIcon', name:'School', unReadCount:0, readCount: 10 },
+  { colour:'border-green-500', tab: 'jobs', icon: 'InboxStackIcon', name: 'Jobs', unReadCount: 0, readCount: 32 },
+  { colour:'border-orange-500', tab: 'socials', icon: 'InboxStackIcon', name: 'Socials', unReadCount: 0, readCount: 32 },
+]
 
 </script>
 
