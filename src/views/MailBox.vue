@@ -9,9 +9,9 @@
 
         <div class="h-auto w-full p-0">
           <!-- <div class="h-10 w-full bg-white rounded"></div> -->
-          <div class="h-10 w-full rounded text-sm flex items-center justify-between text-slate-500 p-2 my-0.5" 
+          <div class="h-12 w-full rounded-lg text-sm flex items-center justify-between text-slate-500 p-2 cursor-pointer" 
             v-for="item in mainMenuItems"
-            :class="{ 'bg-white': activeTab === item.tab }"
+            :class="{ 'bg-white border shadow-sm': activeTab === item.tab }"
             @click="changeTab(item.tab)"
             :key="item">
               <div 
@@ -20,7 +20,7 @@
                   class="h-6 w-6" 
                   :is="OutlineIcons[item.icon]">
                 </component>
-                <span class="text-xs font-semibold">{{ item.name }}</span>
+                <span class="text-xs font-normal">{{ item.name }}</span>
                 <div
                   :class="{ 'hidden' : item.unReadCount === 0}" 
                   class="text-white bg-red-600 rounded px-1">
