@@ -2,9 +2,15 @@
   <div class="text-3xl w-screen h-screen p-4 bg-slate-200">
     <div class="w-full h-full bg-white border rounded-lg flex">
       
-      <div class="w-1/6 bg-gray-100 border-r p-4 space-y-4">
+      <div class="w-1/5 bg-gray-100 border-r p-4 space-y-4">
 
-        <div class="w-full h-16 bg-slate-200 border rounded"></div>
+        <div class="w-full h-16 bg-slate-200 border rounded flex items-center p-2 space-x-2">
+          <div class="h-12 w-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex-shrink-0"></div>
+          <div class="flex flex-col justify-center -space-y-2.5 pt-2">
+            <span class="text-sm font-semibold">Abednego Samuel</span>
+            <span class="text-[10px] text-gray-500">abednego.example@gmail.com</span>
+          </div>
+        </div>
         <div class="w-full h-12 bg-blue-700 border rounded-lg text-white flex items-center text-sm pl-2 space-x-2">
           <component 
             class="h-6 w-6 stroke-2" 
