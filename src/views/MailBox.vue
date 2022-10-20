@@ -114,15 +114,18 @@
 
       <div class="p-6">
       <div class="h-auto border-b border-gray-200">
-        <p class="text-[22px] mb-4">Web design requirement for travel website</p>
+        <p class="text-[18px] mb-4 text-slate-600 font-bold">Web design requirement for travel website</p>
         
-        <p class="text-[18px] mb-4">Hello Asal Design</p>
-        <p class="text-[18px] mb-4">I contacted you to see if you are interested and willing to help me with my website<br/>
+        <div class="text-[14px] text-slate-600">
+        <p class="mb-4">Hello Asal Design</p>
+        <p class="mb-4">I contacted you to see if you are interested and willing to help me with my website<br/>
         design. Work is still on-going and it's starting on Figma. If you're interested, let me <br/>
         know if we can chat for a bit and how much you usually charge.
         </p>
-        <p class="text-[18px] mb-4">Hope to hear from you soon.</p>
-        <p class="text-[18px] mb-6">Regards,<br/>Wahyu Siburan </p>
+        <p class="mb-4">Hope to hear from you soon.</p>
+        <p class="mb-6">Regards,<br/>Wahyu Siburan </p>
+      </div>
+      
       </div>
     </div>
 
