@@ -101,8 +101,13 @@
             </div>
 
           </div>
-          <div class="bg-gray-200 rounded-md w-32"> 
-            <small class="text-[18px] p-[0.6px] ml-2 p-2">Current</small>
+          <div class="bg-gray-200 rounded-md w-32 flex"> 
+            <small class="text-[15px] p-[0.6px] ml-3 p-2">Current</small>
+            <component 
+              class="h-5 w-5 stroke-2 ml-4 mt-3" 
+              :is="OutlineIcons['ChevronDownIcon']">
+            </component>
+            <!-- ChevronDownIcon -->
           </div>
         </div>
       </div>
