@@ -85,15 +85,24 @@
               <small>382 message</small>&nbsp;&nbsp;<small>120 Unread</small>
             </div>
           </div>
-          <div class="flex"> 
-            <div class="w-72"> 
-              <input type="text" class="w-full bg-gray-100 border-none rounded-md text-sm h-10 p-2" placeholder="Search"/>
+          <div class="flex mt-1 mb-3"> 
+            <div class="w-full flex mt-2 relative">
+              <component 
+              class="h-10 w-10 stroke-2 bg-gray-200 rounded-l-md p-1" 
+              :is="OutlineIcons['MagnifyingGlassIcon']">
+            </component>
+              <input type="text" class="w-full bg-gray-200 border-none rounded-r-md text-sm h-10 p-2 focus:outline-none focus:ring" placeholder="Search"/>             
+              <button class="bg-gray-200 ml-5 p-1 rounded-md">
+                <component 
+              class="h-6 w-6 stroke-2" 
+              :is="OutlineIcons['PlusIcon']">
+            </component>
+              </button>
             </div>
 
-              <!-- This is not how one references items / elements within an array -->
-              <!-- <button class="ml-4"><OutlineIcons.PlusIcon  class="bg-gray-500"/></button> -->
-
-              <button class="ml-4"><OutlineIcons.PlusIcon  class="bg-gray-500"/></button>
+          </div>
+          <div class="bg-gray-200 rounded-md w-32"> 
+            <small class="text-[18px] p-[0.6px] ml-2 p-2">Current</small>
           </div>
         </div>
       </div>
@@ -175,6 +184,10 @@ const labelItems = [
   { colour:'border-green-500', tab: 'jobs', icon: 'InboxStackIcon', name: 'Jobs', unReadCount: 0, readCount: 32 },
   { colour:'border-orange-500', tab: 'socials', icon: 'InboxStackIcon', name: 'Socials', unReadCount: 0, readCount: 32 },
 ]
+const search = [
+  {icon:'InboxStackIcon'}
+]
+
 
 </script>
 
