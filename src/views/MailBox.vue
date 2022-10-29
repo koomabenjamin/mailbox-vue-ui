@@ -77,8 +77,8 @@
 
       </div>
       
-      <div class="w-1/3 bg-gray-50 border-r p-4">
-        <div class="w-full h-40 item-center text-slate-500">
+      <div class="w-1/3 bg-gray-50 border-r">
+        <div class="w-full h-40 item-center text-slate-500 p-4 mb-5">
           <div class="flex-col">
             <h6 class="text-[20px] font-bold">Inbox</h6>
             <div class="text-sm text-slate-400 justify-between items-center"> 
@@ -109,6 +109,43 @@
             </component>
             <!-- ChevronDownIcon -->
           </div>
+        </div>
+        <!-- email list  -->
+        <div class="overflow-y-auto h-4/6 mt-16"> 
+          <ul class="list-disc">
+            <div class="text-[14px] text-slate-600 bg-white p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Your audience is growing</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+            <div class="text-[14px] text-slate-600 bg-sky-50 border-l-4 border-indigo-500 p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Web designer requirement</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+            <div class="text-[14px] text-slate-600 bg-white p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Your audience is growing</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+            <div class="text-[14px] text-slate-600 bg-white p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Your audience is growing</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+            <div class="text-[14px] text-slate-600 bg-white p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Your audience is growing</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+            <div class="text-[14px] text-slate-600 bg-white p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Your audience is growing</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+            <div class="text-[14px] text-slate-600 bg-white p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Your audience is growing</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+            <div class="text-[14px] text-slate-600 bg-white p-4"> 
+              <li class="text-cyan-600 ml-3"><b class="text-black">Your audience is growing</b></li>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus quod nobis magni saepe, et minima incidunt vitae fugiat autem cupiditate error quos odit sapiente, repellendus excepturi dolorum dignissimos! At!</p>
+            </div>
+          </ul>
         </div>
       </div>
       
